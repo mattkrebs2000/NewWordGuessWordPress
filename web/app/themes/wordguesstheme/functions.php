@@ -2,207 +2,188 @@
 function add_js_functions(){
 ?>
 <script>
-var games = [0];
-var wins = [0];
-var losses = [];
-var percentage = [0];
-var newImage = "";
-var userGuess = "";
-var teamNameAssignment;
-var listOfGuesses;
-var blankSpaces;
-var wrongGuesses;
-var el = document.getElementById('teamContainer');
+let games = [0];
+let wins = [0];
+let losses = [];
+let percentage = [0];
+let roundedPercentage;
+let newImage = "";
+let victory;
+let teamNameAssignment;
+let blankSpaces;
+let el;
+let newImage2;
+let listOfGuesses;
+let listOfWrongGuesses;
+let wrongGuesses;
+let ele;
+let elem;
+let userGuess;
+let eleme;
+let wg;
 
 
-
-
-
-
-
-
-
-function myFunction() {
-
-
-
-
-
-
+function format() {
 
 
     victory = 0;
-    listOfGuesses = [];
-    blankSpaces = [];
 
-
-
-    var teamNames = ["bears", "bengals", "bills", "broncos", "browns", "buccaneers", "cardinals", "chargers",
+    const teamNames = [
+        "bears",
+        "bengals",
+        "bills",
+        "broncos",
+        "browns",
+        "buccaneers",
+        "cardinals",
+        "chargers",
         "chiefs",
-        "colts", "cowboys", "dolphins", "eagles", "falcons", "fortyniners", "giants", "jaguars", "jets",
+        "colts",
+        "cowboys",
+        "dolphins",
+        "eagles",
+        "falcons",
+        "fortyniners",
+        "giants",
+        "jaguars",
+        "jets",
         "lions",
-        "packers", "panthers", "patriots", "raiders", "rams", "ravens", "redskins", "saints", "seahawks",
-        "steelers", "texans", "titans", "vikings"
+        "packers",
+        "panthers",
+        "patriots",
+        "raiders",
+        "rams",
+        "ravens",
+        "redskins",
+        "saints",
+        "seahawks",
+        "steelers",
+        "texans",
+        "titans",
+        "vikings",
     ];
-    teamNameAssignment = teamNames[Math.floor(Math.random() *
-        teamNames.length)];
+    teamNameAssignment = teamNames[Math.floor(Math.random() * teamNames.length)];
+    blankSpaces = [];
+    listOfWrongGuesses = [];
 
-    console.log(teamNameAssignment);
+    wg = document.getElementById("firstGuess");
+    wg.innerHTML = listOfWrongGuesses;
 
-
-
-    for (var i = 0; i < teamNameAssignment.length; i++) {
+    for (let i = 0; i < teamNameAssignment.length; i++) {
         blankSpaces[i] = "*";
     }
-    var el = document.getElementById('teamContainer');
+    el = document.getElementById("teamContainer");
     el.innerHTML = blankSpaces.join(" ");
 
-
-
-
-
-    // var eleme = document.getElementById('wrong');
-    //      eleme.innerHTML=listOfGuesses;
-
-    var wrongGuesses = 5;
-    var ele = document.getElementById('missedAttemtsLeft');
+    newImage2 = document.body;
+    newImage2.style.backgroundImage = "url('./images/NFLLogo2.png')";
+    listOfGuesses = [];
+    listOfWrongGuesses = [];
+    wrongGuesses = 5;
+    ele = document.getElementById("missedAttemtsLeft");
     ele.innerHTML = wrongGuesses;
 
-
-
-
-
-
-
-
-
-    if (victory === teamNameAssignment.length) {
-
-
-        alert("Congratulations, You Won! Click the button below to play again.");
-        games++;
-        wins++;
-        var elem = document.getElementById('winTotal');
-        elem.innerHTML = wins;
-
-        var percentage = (wins / games) * 100;
-        var roundedPercentage = Math.round(10 * percentage) / 10;
-
-        var eleme = document.getElementById('winningPercentage');
-        eleme.innerHTML = roundedPercentage;
-
-
-
-        document.getElementById("button").innerHTML = "Click Here To Play Again";
-
-
-
-    }
-
-    if (wrongGuesses === 0) {
-        alert("You lost, click the button below to try again!");
-        games++;
-        losses++;
-        var elem = document.getElementById('lossTotal');
-        elem.innerHTML = " " + losses;
-
-        var percentage = (wins / games) * 100;
-        var roundedPercentage = Math.round(10 * percentage) / 10;
-
-        var eleme = document.getElementById('winningPercentage');
-        eleme.innerHTML = roundedPercentage;
-
-
-
-
-
-        document.getElementById("button").innerHTML = "Click Here To Play Again";
-    }
-
-    el.innerHTML = blankSpaces.join(" ");
-
-    var ele = document.getElementById('missedAttemtsLeft');
-    ele.innerHTML = " " + wrongGuesses;
-
-    jQuery(document).ready(function($) {
-        $("body").css("backgroundImage", "./images/NFLLogo2.png");
-
-        console.log("d", blankSpaces);
-    });
+    document.getElementById("myAudio").pause();
 
 }
-document.onkeyup = function(event) {
-    var newImage = document.body;
-    document.body.style.backgroundImage = "url('./images/NFLLogo2.png')";
 
-    userGuess = event.key;
-    console.log(userGuess);
+newLetter();
 
-    var el = document.getElementById('teamContainer');
-    el.innerHTML = blankSpaces.join(" ");
+function newLetter() {
+    document.onkeyup = function(event) {
+        if (event.keyCode >= 65 && event.keyCode <= 90) {
+            userGuess = event.key.toLowerCase();
 
-    if (teamNameAssignment.indexOf(userGuess) == -1) {
-        listOfGuesses.push(" " + userGuess);
-        wrongGuesses--;
-        var wg = document.getElementById('firstGuess');
-        wg.innerHTML = listOfGuesses;
+            let doubles = listOfGuesses.includes(userGuess);
 
-    }
+            console.log("here", doubles, userGuess, teamNameAssignment, victory);
+
+            if (doubles === true) {
+                alert("That letter has already been guessed. TRY AGAIN");
+                return false;
+            }
+
+            for (var i = 0; i < teamNameAssignment.length; i++) {
+                if (teamNameAssignment[i] === userGuess && doubles === false) {
+                    blankSpaces[i] = userGuess;
+                    victory++;
+                    listOfGuesses.push(userGuess);
+                    console.log(listOfGuesses);
+                }
+            }
+            if (teamNameAssignment.indexOf(userGuess) == -1 && !listOfWrongGuesses.includes(" " + userGuess)) {
+                listOfWrongGuesses.push(" " + userGuess);
+                wrongGuesses--;
+                wg = document.getElementById("firstGuess");
+                wg.innerHTML = listOfWrongGuesses;
+
+                console.log("wrong guesses", listOfWrongGuesses);
+            }
 
 
+            if (victory === teamNameAssignment.length) {
+                victorysong();
 
+                alert(
+                    "Congratulations, You Won! Click the button below to play again."
+                );
+                games++;
+                wins++;
+                elem = document.getElementById("winTotal");
+                elem.innerHTML = wins;
 
+                percentage = (wins / games) * 100;
+                roundedPercentage = Math.round(10 * percentage) / 10;
 
+                eleme = document.getElementById("winningPercentage");
+                eleme.innerHTML = roundedPercentage;
 
+                newImage = document.body;
+                newImage.style.backgroundImage =
+                    "url('./images/" + teamNameAssignment + ".png')";
 
-    // el.innerHTML=blankSpaces.join(" ");
+                document.getElementById("button").innerHTML =
+                    "Click Here To Play Again";
+            }
 
+            if (wrongGuesses === 0) {
+                alert("You lost, click the button below to try again!");
+                games++;
+                losses++;
+                elem = document.getElementById("lossTotal");
+                elem.innerHTML = " " + losses;
 
-    for (var i = 0; i < teamNameAssignment.length; i++) {
+                percentage = (wins / games) * 100;
+                roundedPercentage = Math.round(10 * percentage) / 10;
 
-        if (teamNameAssignment[i] === userGuess) {
-            blankSpaces[i] = userGuess;
+                eleme = document.getElementById("winningPercentage");
+                eleme.innerHTML = roundedPercentage;
 
-            updatedList = listOfGuesses.push(userGuess);
+                newImage = document.body;
+                newImage.style.backgroundImage =
+                    "url('./images/" + teamNameAssignment + ".png')";
 
+                document.getElementById("button").innerHTML =
+                    "Click Here To Play Again";
+            }
+
+            el = document.getElementById("teamContainer");
+            el.innerHTML = blankSpaces.join(" ");
+
+            ele = document.getElementById("missedAttemtsLeft");
+            ele.innerHTML = " " + wrongGuesses;
+
+            return true;
+        } else {
+            alert("Please input alphabet characters only");
+            return false;
         }
+    };
+}
 
-        for (var n = 0; n < listOfGuesses.length; n++) {
-
-            if (listOfGuesses[n] != userGuess && teamNameAssignment[i] === userGuess);
-
-            victory++
-
-
-        }
-
-
-
-        console.log(victory)
-    }
-    console.log("a", teamNameAssignment);
-    console.log("b", listOfGuesses);
-    console.log("c", blankSpaces);
-    console.log();
-    console.log();
-    console
-        .log();
-    console.log();
-    console.log();
-    console.log();
-
-    jQuery(document).ready(function($) {
-
-        var el = document.getElementById('teamContainer');
-        el.innerHTML = blankSpaces.join(" ");
-
-        var ele = document.getElementById('missedAttemtsLeft');
-        ele.innerHTML = " " + wrongGuesses;
-
-        console.log("f", blankSpaces);
-    });
-
-
+function victorysong() {
+    document.getElementById("myAudio").play();
+    console.log("PLAY");
 }
 </script>
 <?php
