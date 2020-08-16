@@ -117,130 +117,130 @@ function ImagesOfTeams() {
         jQuery("#try").addClass("bears")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "browns") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "browns") {
         jQuery("#try").addClass("browns")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "bengals") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "bengals") {
         jQuery("#try").addClass("bengals")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "bills") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "bills") {
         jQuery("#try").addClass("bills")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "broncos") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "broncos") {
         jQuery("#try").addClass("broncos")
     };
 
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "buccaneers") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "buccaneers") {
         jQuery("#try").addClass("buccaneers")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "cardinals") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "cardinals") {
         jQuery("#try").addClass("cardinals")
     };
 
-    if (victory === teamNameAssignment.length && teamNameAssignment === "chargers") {
+    else if (victory === teamNameAssignment.length && teamNameAssignment === "chargers") {
         jQuery("#try").addClass("chargers")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "chiefs") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "chiefs") {
         jQuery("#try").addClass("chiefs")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "colts") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "colts") {
         jQuery("#try").addClass("colts")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "cowboys") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "cowboys") {
         jQuery("#try").addClass("cowboys")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "dolphins") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "dolphins") {
         jQuery("#try").addClass("dolphins")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "eagles") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "eagles") {
         jQuery("#try").addClass("eagles")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "falcons") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "falcons") {
         jQuery("#try").addClass("falcons")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "fortyniners") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "fortyniners") {
         jQuery("#try").addClass("fortyniners")
     };
 
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "giants") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "giants") {
         jQuery("#try").addClass("giants")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "jaguars") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "jaguars") {
         jQuery("#try").addClass("jaguars")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "jets") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "jets") {
         jQuery("#try").addClass("jets")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "lions") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "lions") {
         jQuery("#try").addClass("lions")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "packers") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "packers") {
         jQuery("#try").addClass("packers")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "panthers") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "panthers") {
         jQuery("#try").addClass("panthers")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "patriots") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "patriots") {
         jQuery("#try").addClass("patriots")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "raiders") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "raiders") {
         jQuery("#try").addClass("raiders")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "rams") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "rams") {
         jQuery("#try").addClass("rams")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "ravens") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "ravens") {
         jQuery("#try").addClass("ravens")
     };
 
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "redskins") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "redskins") {
         jQuery("#try").addClass("redskins")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "saints") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "saints") {
         jQuery("#try").addClass("saints")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "seahawks") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "seahawks") {
         jQuery("#try").addClass("seahawks")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "steelers") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "steelers") {
         jQuery("#try").addClass("steelers")
     };
 
-    if (victory === teamNameAssignment.length && teamNameAssignment === "texans") {
+    else if (victory === teamNameAssignment.length && teamNameAssignment === "texans") {
         jQuery("#try").addClass("texans")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "titans") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "titans") {
         jQuery("#try").addClass("titans")
     };
 
-    if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "vikings") {
+    else if (victory === (teamNameAssignment.length - 1) && teamNameAssignment === "vikings") {
         jQuery("#try").addClass("vikings")
 
     };
