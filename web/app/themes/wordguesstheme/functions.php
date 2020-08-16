@@ -82,6 +82,7 @@ function format() {
     ele.innerHTML = wrongGuesses;
 
     document.getElementById("myAudio").pause();
+    showImages();
 
 }
 
@@ -181,6 +182,11 @@ function newLetter() {
 function victorysong() {
     document.getElementById("myAudio").play();
     console.log("PLAY");
+}
+
+function showImages() {
+    document.body.style.backgroundImage = "url('./images/" + teamNameAssignment + ".png')";
+    console.log(nameShown)
 }
 </script>
 <?php
