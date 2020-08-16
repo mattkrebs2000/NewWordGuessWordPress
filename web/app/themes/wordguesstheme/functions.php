@@ -85,7 +85,7 @@ function format() {
 
 
     function showImages() {
-        jQuery("body").addClass("nfl");
+        jQuery("#try").addClass("nfl");
         console.log("classadded");
     }
     showImages();

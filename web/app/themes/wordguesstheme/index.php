@@ -1,4 +1,4 @@
-<div>
+<div id="try">
     <?php get_header(); ?>
 
     <p id="title">Team Guessing Game</p>
