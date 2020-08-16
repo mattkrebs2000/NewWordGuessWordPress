@@ -74,8 +74,7 @@ function format() {
     el.innerHTML = blankSpaces.join(" ");
 
 
-    document.getElementById("#try").style.backgroundImage = "
-    url('./images/NFLLogo2.png') !important ";
+    jQuery("#try").addClass("nfl");
     listOfGuesses = [];
     listOfWrongGuesses = [];
     wrongGuesses = 5;
