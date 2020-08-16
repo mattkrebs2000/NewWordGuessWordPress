@@ -74,11 +74,13 @@ function format() {
     el.innerHTML = blankSpaces.join(" ");
 
 
-    document.body.style.backgroundImage = "url('./images/NFLLogo2.png')";
+    document.getElementById("#try").style.backgroundImage = "
+    url('./images/NFLLogo2.png') !important ";
     listOfGuesses = [];
     listOfWrongGuesses = [];
     wrongGuesses = 5;
-    ele = document.getElementById("missedAttemtsLeft");
+    ele = document.getElementById(
+        "missedAttemtsLeft");
     ele.innerHTML = wrongGuesses;
 
     document.getElementById("myAudio").pause();
