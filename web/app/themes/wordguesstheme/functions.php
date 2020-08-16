@@ -193,7 +193,7 @@ function format() {
 
     function showImages() {
         document.body.style.backgroundImage = "url('./images/" + teamNameAssignment + ".png')";
-        console.log(nameShown)
+
     }
 </script>
 <?php
