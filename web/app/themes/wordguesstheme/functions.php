@@ -25,7 +25,7 @@ let wg;
 function format() {
 
 
-
+    jQuery("#try").addClass("nfl");
 
     victory = 0;
 
