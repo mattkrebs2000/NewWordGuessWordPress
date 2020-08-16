@@ -95,6 +95,7 @@ function addNFL() {
     jQuery("#try").addClass("nfl");
 }
 
+
 function ImagesOfTeams() {
 
     jQuery("#try").removeClass();
@@ -118,7 +119,120 @@ function ImagesOfTeams() {
     if (teamNameAssignment === "broncos") {
         jQuery("#try").addClass("broncos")
     };
+
+
+    if (teamNameAssignment === "buccaneers") {
+        jQuery("#try").addClass("buccaneers")
+    };
+
+    if (teamNameAssignment === "cardinals") {
+        jQuery("#try").addClass("cardinals")
+    };
+
+    if (teamNameAssignment === "chargers") {
+        jQuery("#try").addClass("chargers")
+    };
+
+    if (teamNameAssignment === "chiefs") {
+        jQuery("#try").addClass("chiefs")
+    };
+
+    if (teamNameAssignment === "colts") {
+        jQuery("#try").addClass("colts")
+    };
+
+    if (teamNameAssignment === "cowboys") {
+        jQuery("#try").addClass("cowboys")
+    };
+
+    if (teamNameAssignment === "dolphins") {
+        jQuery("#try").addClass("dolphins")
+    };
+
+    if (teamNameAssignment === "eagles") {
+        jQuery("#try").addClass("eagles")
+    };
+
+    if (teamNameAssignment === "falcons") {
+        jQuery("#try").addClass("falcons")
+    };
+
+    if (teamNameAssignment === "fortyniners") {
+        jQuery("#try").addClass("fortyniners")
+    };
+
+
+    if (teamNameAssignment === "giants") {
+        jQuery("#try").addClass("giants")
+    };
+
+    if (teamNameAssignment === "jaguars") {
+        jQuery("#try").addClass("jaguars")
+    };
+
+    if (teamNameAssignment === "jets") {
+        jQuery("#try").addClass("jets")
+    };
+
+    if (teamNameAssignment === "lions") {
+        jQuery("#try").addClass("lions")
+    };
+
+    if (teamNameAssignment === "packers") {
+        jQuery("#try").addClass("packers")
+    };
+
+    if (teamNameAssignment === "panthers") {
+        jQuery("#try").addClass("panthers")
+    };
+
+    if (teamNameAssignment === "patriots") {
+        jQuery("#try").addClass("patriots")
+    };
+
+    if (teamNameAssignment === "raiders") {
+        jQuery("#try").addClass("raiders")
+    };
+
+    if (teamNameAssignment === "rams") {
+        jQuery("#try").addClass("rams")
+    };
+
+    if (teamNameAssignment === "ravens") {
+        jQuery("#try").addClass("ravens")
+    };
+
+
+    if (teamNameAssignment === "redskins") {
+        jQuery("#try").addClass("redskins")
+    };
+
+    if (teamNameAssignment === "saints") {
+        jQuery("#try").addClass("saints")
+    };
+
+    if (teamNameAssignment === "seahawks") {
+        jQuery("#try").addClass("seahawks")
+    };
+
+    if (teamNameAssignment === "steelers") {
+        jQuery("#try").addClass("steelers")
+    };
+
+    if (teamNameAssignment === "texans") {
+        jQuery("#try").addClass("texans")
+    };
+
+    if (teamNameAssignment === "titans") {
+        jQuery("#try").addClass("titans")
+    };
+
+    if (teamNameAssignment === "vikings") {
+        jQuery("#try").addClass("vikings")
+    };
+
 }
+
 
 
 
