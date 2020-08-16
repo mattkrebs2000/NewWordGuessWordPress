@@ -177,6 +177,11 @@ function newLetter() {
         }
     };
 }
+
+function victorysong() {
+    document.getElementById("myAudio").play();
+    console.log("PLAY");
+}
 </script>
 <?php
 }
