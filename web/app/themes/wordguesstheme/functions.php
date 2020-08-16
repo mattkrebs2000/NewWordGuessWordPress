@@ -90,6 +90,7 @@ function format() {
 
     newLetter();
     showImages();
+    showTeamImages();
 
     function newLetter() {
         document.onkeyup = function(event) {
@@ -125,6 +126,10 @@ function format() {
 
                 if (victory === teamNameAssignment.length) {
 
+                    function showTeamImages() {
+                        document.body.style.backgroundImage = "url('./images/" + teamNameAssignment + ".png')";
+                    }
+
 
                     alert(
                         "Congratulations, You Won! Click the button below to play again."
@@ -139,10 +144,6 @@ function format() {
 
                     eleme = document.getElementById("winningPercentage");
                     eleme.innerHTML = roundedPercentage;
-
-
-                    document.body.style.backgroundImage =
-                        "url('./images/" + teamNameAssignment + ".png')";
 
                     document.getElementById("button").innerHTML =
                         "Click Here To Play Again";
