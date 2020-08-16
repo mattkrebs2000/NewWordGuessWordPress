@@ -161,7 +161,7 @@ function newLetter() {
                 eleme = document.getElementById("winningPercentage");
                 eleme.innerHTML = roundedPercentage;
 
-                document.body.style.backgroundImage =
+                document.getElementById("try").style.backgroundImage =
                     "url('./images/" + teamNameAssignment + ".png')";
 
                 document.getElementById("button").innerHTML =
