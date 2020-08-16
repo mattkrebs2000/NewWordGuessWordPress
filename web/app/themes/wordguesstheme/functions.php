@@ -24,8 +24,9 @@ let wg;
 
 function format() {
 
+    document.getElementById('try').className += 'nfl';
 
-    jQuery("#try").addClass("nfl");
+
 
     victory = 0;
 
