@@ -74,7 +74,7 @@ function format() {
     el.innerHTML = blankSpaces.join(" ");
 
 
-    jQuery("#try").addClass("nfl");
+    addNFL();
     listOfGuesses = [];
     listOfWrongGuesses = [];
     wrongGuesses = 5;
@@ -91,6 +91,9 @@ function format() {
 newLetter();
 
 
+function addNFL() {
+    jQuery("#try").addClass("nfl");
+}
 
 function newLetter() {
     document.onkeyup = function(event) {
