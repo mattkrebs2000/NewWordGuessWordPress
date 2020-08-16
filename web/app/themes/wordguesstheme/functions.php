@@ -244,6 +244,10 @@ function ImagesOfTeams() {
         jQuery("#try").addClass("vikings")
 
     };
+    else {
+        jQuery("#try").addClass("nfl")
+    };
+
 }
 
 ImagesOfTeams();
