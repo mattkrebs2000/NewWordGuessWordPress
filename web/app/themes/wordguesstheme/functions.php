@@ -146,6 +146,13 @@ function newLetter() {
 
                 document.getElementById("button").innerHTML =
                     "Click Here To Play Again";
+
+                jQuery("#try").removeClass("nfl");
+                jQuery("#try").css(
+                    "background-image", "url('./images/" + teamNameAssignment + ".png')",
+
+                );
+
             }
 
             if (wrongGuesses === 0) {
