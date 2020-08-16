@@ -259,10 +259,12 @@ function newLetter() {
         if (event.keyCode >= 65 && event.keyCode <= 90) {
             userGuess = event.key.toLowerCase();
 
+
+            document.getElementById('try').className = '
+            ';
             document.getElementById('try').className += 'nfl';
 
-            ImagesOfTeams()
-            addNFL()
+            ImagesOfTeams() addNFL()
 
 
             let doubles = listOfGuesses.includes(userGuess);
@@ -282,7 +284,8 @@ function newLetter() {
 
                 }
             }
-            if (teamNameAssignment.indexOf(userGuess) == -1 && !listOfWrongGuesses.includes(" " + userGuess)) {
+            if (teamNameAssignment.indexOf(userGuess) == -1 && !listOfWrongGuesses.includes(" " +
+                    userGuess)) {
                 listOfWrongGuesses.push(" " + userGuess);
                 wrongGuesses--;
                 wg = document.getElementById("firstGuess");
