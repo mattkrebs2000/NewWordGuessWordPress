@@ -181,10 +181,7 @@ function newLetter() {
     };
 };
 
-function victorysong() {
-    document.getElementById("myAudio").play();
-    console.log("PLAY");
-};
+
 
 function showImages() {
     document.body.style.backgroundImage = "url('./images/" + teamNameAssignment + ".png')";
