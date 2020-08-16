@@ -462,3 +462,14 @@ display:none;
 
 }
 
+.nfl {
+
+  background-image: url('./images/NFLLogo2.png') !important;
+
+}
+
+.teams {
+
+  background-image: url("./images/" + teamNameAssignment + ".png");
+
+}

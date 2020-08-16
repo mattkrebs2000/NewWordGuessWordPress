@@ -85,7 +85,7 @@ function format() {
 
 
     function showImages() {
-        document.body.style.backgroundImage = "url('./images/NFLLogo2.png')";
+        jQuery("body").addClass("nfl");
     }
     showImages();
 };
@@ -180,12 +180,6 @@ function newLetter() {
         }
     };
 };
-
-
-
-function showImages() {
-    document.body.style.backgroundImage = "url('./images/NFLLogo2.png')";
-}
 </script>
 <?php
 }
