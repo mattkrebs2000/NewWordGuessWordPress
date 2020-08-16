@@ -99,142 +99,146 @@ function addNFL() {
 function ImagesOfTeams() {
 
     jQuery("#try").removeClass();
+    console.log("teamName ", teamNameAssignment)
 
-    if (teamNameAssignment === "bears") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "bears") {
         jQuery("#try").addClass("bears")
     };
 
-    if (teamNameAssignment === "browns") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "browns") {
         jQuery("#try").addClass("browns")
     };
 
-    if (teamNameAssignment === "bengals") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "bengals") {
         jQuery("#try").addClass("bengals")
     };
 
-    if (teamNameAssignment === "bills") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "bills") {
         jQuery("#try").addClass("bills")
     };
 
-    if (teamNameAssignment === "broncos") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "broncos") {
         jQuery("#try").addClass("broncos")
     };
 
 
-    if (teamNameAssignment === "buccaneers") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "buccaneers") {
         jQuery("#try").addClass("buccaneers")
     };
 
-    if (teamNameAssignment === "cardinals") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "cardinals") {
         jQuery("#try").addClass("cardinals")
     };
 
-    if (teamNameAssignment === "chargers") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "chargers") {
         jQuery("#try").addClass("chargers")
     };
 
-    if (teamNameAssignment === "chiefs") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "chiefs") {
         jQuery("#try").addClass("chiefs")
     };
 
-    if (teamNameAssignment === "colts") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "colts") {
         jQuery("#try").addClass("colts")
     };
 
-    if (teamNameAssignment === "cowboys") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "cowboys") {
         jQuery("#try").addClass("cowboys")
     };
 
-    if (teamNameAssignment === "dolphins") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "dolphins") {
         jQuery("#try").addClass("dolphins")
     };
 
-    if (teamNameAssignment === "eagles") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "eagles") {
         jQuery("#try").addClass("eagles")
     };
 
-    if (teamNameAssignment === "falcons") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "falcons") {
         jQuery("#try").addClass("falcons")
     };
 
-    if (teamNameAssignment === "fortyniners") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "fortyniners") {
         jQuery("#try").addClass("fortyniners")
     };
 
 
-    if (teamNameAssignment === "giants") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "giants") {
         jQuery("#try").addClass("giants")
     };
 
-    if (teamNameAssignment === "jaguars") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "jaguars") {
         jQuery("#try").addClass("jaguars")
     };
 
-    if (teamNameAssignment === "jets") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "jets") {
         jQuery("#try").addClass("jets")
     };
 
-    if (teamNameAssignment === "lions") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "lions") {
         jQuery("#try").addClass("lions")
     };
 
-    if (teamNameAssignment === "packers") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "packers") {
         jQuery("#try").addClass("packers")
     };
 
-    if (teamNameAssignment === "panthers") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "panthers") {
         jQuery("#try").addClass("panthers")
     };
 
-    if (teamNameAssignment === "patriots") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "patriots") {
         jQuery("#try").addClass("patriots")
     };
 
-    if (teamNameAssignment === "raiders") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "raiders") {
         jQuery("#try").addClass("raiders")
     };
 
-    if (teamNameAssignment === "rams") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "rams") {
         jQuery("#try").addClass("rams")
     };
 
-    if (teamNameAssignment === "ravens") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "ravens") {
         jQuery("#try").addClass("ravens")
     };
 
 
-    if (teamNameAssignment === "redskins") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "redskins") {
         jQuery("#try").addClass("redskins")
     };
 
-    if (teamNameAssignment === "saints") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "saints") {
         jQuery("#try").addClass("saints")
     };
 
-    if (teamNameAssignment === "seahawks") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "seahawks") {
         jQuery("#try").addClass("seahawks")
     };
 
-    if (teamNameAssignment === "steelers") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "steelers") {
         jQuery("#try").addClass("steelers")
     };
 
-    if (teamNameAssignment === "texans") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "texans") {
         jQuery("#try").addClass("texans")
     };
 
-    if (teamNameAssignment === "titans") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "titans") {
         jQuery("#try").addClass("titans")
     };
 
-    if (teamNameAssignment === "vikings") {
+    if (victory === teamNameAssignment.length && teamNameAssignment === "vikings") {
         jQuery("#try").addClass("vikings")
+
+        else {
+            jQuery("#try").addClass("nfl")
+        }
     };
 
 }
 
-
-
+ImagesOfTeams();
 
 function newLetter() {
     document.onkeyup = function(event) {
@@ -270,7 +274,7 @@ function newLetter() {
 
             if (victory === teamNameAssignment.length) {
 
-                ImagesOfTeams();
+
 
                 alert(
                     "Congratulations, You Won! Click the button below to play again."
@@ -292,7 +296,7 @@ function newLetter() {
 
 
 
-
+                ImagesOfTeams();
             }
 
             if (wrongGuesses === 0) {
