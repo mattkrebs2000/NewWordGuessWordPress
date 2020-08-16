@@ -95,6 +95,16 @@ function addNFL() {
     jQuery("#try").addClass("nfl");
 }
 
+function addTeam() {
+    jQuery("#try").removeClass("nfl");
+    jQuery("#try").css(
+        "background-image",
+        "url('./images/" + teamNameAssignment + ".png !important')"
+    );
+}
+
+
+
 function newLetter() {
     document.onkeyup = function(event) {
         if (event.keyCode >= 65 && event.keyCode <= 90) {
@@ -129,9 +139,7 @@ function newLetter() {
 
             if (victory === teamNameAssignment.length) {
 
-                jQuery("#try").removeClass("nfl");
-                jQuery("#try").css(
-                    "background-image", "url('./images/" + teamNameAssignment + ".png') !important");
+                addTeam();
 
                 alert(
                     "Congratulations, You Won! Click the button below to play again."
