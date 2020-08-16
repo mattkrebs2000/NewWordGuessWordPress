@@ -92,7 +92,10 @@ newLetter();
 
 
 function addNFL() {
-    jQuery("#try").addClass("nfl");
+    jQuery("#try").removeClass();
+    if (!victory === teamNameAssignment.length) {
+        jQuery("#try").addClass("nfl");
+    }
 }
 
 
@@ -231,9 +234,7 @@ function ImagesOfTeams() {
     if (victory === teamNameAssignment.length && teamNameAssignment === "vikings") {
         jQuery("#try").addClass("vikings")
 
-
     };
-
 }
 
 ImagesOfTeams();
