@@ -246,6 +246,8 @@ function newLetter() {
         if (event.keyCode >= 65 && event.keyCode <= 90) {
             userGuess = event.key.toLowerCase();
 
+            ImagesOfTeams()
+
             let doubles = listOfGuesses.includes(userGuess);
 
             console.log("here", doubles, userGuess, teamNameAssignment, victory);
@@ -280,6 +282,7 @@ function newLetter() {
                 alert(
                     "Congratulations, You Won! Click the button below to play again."
                 );
+
                 games++;
                 wins++;
                 elem = document.getElementById("winTotal");
