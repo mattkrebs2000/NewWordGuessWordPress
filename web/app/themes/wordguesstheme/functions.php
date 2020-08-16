@@ -24,7 +24,8 @@ let wg;
 
 function format() {
 
-    document.getElementById('try').removeClass();
+    jQuery("#try").removeClass();
+
     document.getElementById('try').className += 'nfl';
 
 
@@ -65,7 +66,8 @@ function format() {
         "titans",
         "vikings",
     ];
-    teamNameAssignment = teamNames[Math.floor(Math.random() * teamNames.length)];
+    teamNameAssignment = teamNames[Math.floor(Math.random() * teamNames
+        .length)];
     blankSpaces = [];
     listOfWrongGuesses = [];
 
