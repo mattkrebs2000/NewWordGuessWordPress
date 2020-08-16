@@ -94,6 +94,7 @@ function format() {
     }
 
     newLetter();
+    showImages();
 
     function newLetter() {
         document.onkeyup = function(event) {
