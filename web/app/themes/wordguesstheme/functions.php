@@ -24,6 +24,7 @@ let wg;
 
 function format() {
 
+    document.getElementById('try').removeClass();
     document.getElementById('try').className += 'nfl';
 
 
