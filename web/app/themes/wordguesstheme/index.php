@@ -50,9 +50,7 @@
     </p>
 
     <br>
-    <p id="audio">
-        <audio src="./images/media.io_NFL.mp3" id="myAudio" loop="loop"></audio>
-    </p>
+
     <br>
     <br>
     <br>
