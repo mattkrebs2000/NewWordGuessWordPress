@@ -51,7 +51,8 @@
 
     <br>
     <p id="audio">
-        <audio controls src="./images/media.io_NFL.mp3" id="myAudio" loop="loop" autoplay="autoplay"></audio></p>
+        <audio src=". /images/media.io_NFL.mp3" id="myAudio" loop="loop" autoplay="autoplay"></audio>
+    </p>
     <br>
     <br>
     <br>
