@@ -231,9 +231,7 @@ function ImagesOfTeams() {
     if (victory === teamNameAssignment.length && teamNameAssignment === "vikings") {
         jQuery("#try").addClass("vikings")
 
-        else {
-            jQuery("#try").addClass("nfl")
-        }
+
     };
 
 }
