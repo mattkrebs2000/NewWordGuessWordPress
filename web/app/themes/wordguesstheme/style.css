@@ -473,3 +473,18 @@ display:none;
   background-image: url("./images/" + teamNameAssignment + ".png");
 
 }
+
+#try {
+
+
+  background-color: #ffffff;
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 70%;
+    background-attachment: fixed;
+    background-position: center;
+    font-family:'Times New Roman', Times, serif;
+
+
+}
