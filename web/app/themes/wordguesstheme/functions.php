@@ -90,7 +90,7 @@ function format() {
 
     newLetter();
     showImages();
-    showTeamImages();
+
 
     function newLetter() {
         document.onkeyup = function(event) {
@@ -125,10 +125,6 @@ function format() {
 
 
                 if (victory === teamNameAssignment.length) {
-
-                    function showTeamImages() {
-                        document.body.style.backgroundImage = "url('./images/" + teamNameAssignment + ".png')";
-                    }
 
 
                     alert(
