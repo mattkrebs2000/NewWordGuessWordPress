@@ -103,8 +103,6 @@ function ImagesOfTeams() {
 
     console.log("number ", teamNameAssignment.length)
 
-    jQuery("#try").removeClass();
-    console.log("teamName ", teamNameAssignment)
 
     if (victory === teamNameAssignment.length && teamNameAssignment === "bears") {
         jQuery("#try").addClass("bears")
