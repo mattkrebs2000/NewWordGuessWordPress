@@ -86,6 +86,7 @@ function format() {
 
     function showImages() {
         jQuery("body").addClass("nfl");
+        console.log("classadded");
     }
     showImages();
 };
