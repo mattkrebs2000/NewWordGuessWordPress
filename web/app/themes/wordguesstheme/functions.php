@@ -99,23 +99,23 @@ function ImagesOfTeams() {
 
     jQuery("#try").removeClass();
 
-    if (teamNameAssignment == "bears") {
+    if (teamNameAssignment === "bears") {
         jQuery("#try").addClass("bears")
     };
 
-    if (teamNameAssignment == "browns") {
+    if (teamNameAssignment === "browns") {
         jQuery("#try").addClass("browns")
     };
 
-    if (teamNameAssignment == "bengals") {
+    if (teamNameAssignment === "bengals") {
         jQuery("#try").addClass("bengals")
     };
 
-    if (teamNameAssignment == "bills") {
+    if (teamNameAssignment === "bills") {
         jQuery("#try").addClass("bills")
     };
 
-    if (teamNameAssignment == "broncos") {
+    if (teamNameAssignment === "broncos") {
         jQuery("#try").addClass("broncos")
     };
 }
