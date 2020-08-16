@@ -85,9 +85,10 @@ function format() {
 
 
     function showImages() {
-        document.body.style.backgroundImage = "url('./images/" + teamNameAssignment + ".png')";
-    };
+        document.body.style.backgroundImage = "url('./images/NFLLogo2.png')";
+    }
 };
+
 newLetter();
 showImages();
 
@@ -182,9 +183,8 @@ function newLetter() {
 
 
 function showImages() {
-    document.body.style.backgroundImage = "url('./images/" + teamNameAssignment + ".png')";
-
-};
+    document.body.style.backgroundImage = "url('./images/NFLLogo2.png')";
+}
 </script>
 <?php
 }
