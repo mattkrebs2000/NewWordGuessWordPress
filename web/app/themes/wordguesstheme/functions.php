@@ -7,12 +7,10 @@ let wins = [0];
 let losses = [];
 let percentage = [0];
 let roundedPercentage;
-let newImage = "";
 let victory;
 let teamNameAssignment;
 let blankSpaces;
 let el;
-let newImage2;
 let listOfGuesses;
 let listOfWrongGuesses;
 let wrongGuesses;
@@ -75,8 +73,8 @@ function format() {
     el = document.getElementById("teamContainer");
     el.innerHTML = blankSpaces.join(" ");
 
-    newImage2 = document.body;
-    newImage2.style.backgroundImage = "url('./images/NFLLogo2.png')";
+
+    document.body.style.backgroundImage = "url('./images/NFLLogo2.png')";
     listOfGuesses = [];
     listOfWrongGuesses = [];
     wrongGuesses = 5;
@@ -138,8 +136,8 @@ function newLetter() {
                 eleme = document.getElementById("winningPercentage");
                 eleme.innerHTML = roundedPercentage;
 
-                newImage = document.body;
-                newImage.style.backgroundImage =
+
+                document.body.style.backgroundImage =
                     "url('./images/" + teamNameAssignment + ".png')";
 
                 document.getElementById("button").innerHTML =
@@ -159,8 +157,7 @@ function newLetter() {
                 eleme = document.getElementById("winningPercentage");
                 eleme.innerHTML = roundedPercentage;
 
-                newImage = document.body;
-                newImage.style.backgroundImage =
+                document.body.style.backgroundImage =
                     "url('./images/" + teamNameAssignment + ".png')";
 
                 document.getElementById("button").innerHTML =
