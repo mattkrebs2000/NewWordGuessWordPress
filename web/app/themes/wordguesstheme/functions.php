@@ -293,10 +293,6 @@ function newLetter() {
                 document.getElementById("button").innerHTML =
                     "Click Here To Play Again";
 
-
-
-
-                ImagesOfTeams();
             }
 
             if (wrongGuesses === 0) {
