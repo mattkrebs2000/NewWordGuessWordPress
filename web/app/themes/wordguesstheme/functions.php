@@ -86,11 +86,10 @@ function format() {
         "missedAttemtsLeft");
     ele.innerHTML = wrongGuesses;
 
-    document.getElementById("myAudio").pause();
-
 
 
 };
+
 addNFL();
 newLetter();
 
@@ -264,7 +263,8 @@ function newLetter() {
             ';
             document.getElementById('try').className += 'nfl';
 
-            ImagesOfTeams() addNFL()
+            ImagesOfTeams()
+
 
 
             let doubles = listOfGuesses.includes(userGuess);
