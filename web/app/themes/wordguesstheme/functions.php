@@ -85,7 +85,7 @@ function format() {
 
 
 
-}
+};
 
 newLetter();
 showImages();
@@ -179,17 +179,17 @@ function newLetter() {
             return false;
         }
     };
-}
+};
 
 function victorysong() {
     document.getElementById("myAudio").play();
     console.log("PLAY");
-}
+};
 
 function showImages() {
     document.body.style.backgroundImage = "url('./images/" + teamNameAssignment + ".png')";
 
-}
+};
 </script>
 <?php
 }
