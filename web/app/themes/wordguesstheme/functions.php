@@ -87,6 +87,7 @@ function format() {
     function showImages() {
         document.body.style.backgroundImage = "url('./images/NFLLogo2.png')";
     }
+    showImages();
 };
 
 newLetter();
