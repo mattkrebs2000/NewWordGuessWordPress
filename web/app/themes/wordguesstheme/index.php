@@ -46,12 +46,12 @@
     <br>
 
     <p id="begin">
-        <button id="button" onclick="myFunction()">Press Here to Begin</button>
+        <button id="button" onclick="format()">Press Here to Begin</button>
     </p>
 
     <br>
     <p id="audio">
-        <audio src=". /images/media.io_NFL.mp3" id="myAudio" loop="loop" autoplay="autoplay"></audio>
+        <audio src="./images/media.io_NFL.mp3" id="myAudio" loop="loop"></audio>
     </p>
     <br>
     <br>
