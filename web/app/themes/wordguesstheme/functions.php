@@ -82,6 +82,12 @@ function format() {
     ele.innerHTML = wrongGuesses;
 
     document.getElementById("myAudio").pause();
+
+    function showImages() {
+        document.body.style.backgroundImage = "url('./images/" + teamNameAssignment + ".png')";
+        console.log(nameShown)
+    }
+
     showImages();
 
 }
