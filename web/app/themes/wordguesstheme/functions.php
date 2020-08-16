@@ -84,15 +84,11 @@ function format() {
     document.getElementById("myAudio").pause();
 
 
-    function showImages() {
-        jQuery("#try").addClass("nfl");
-        console.log("classadded");
-    }
-    showImages();
+
 };
 
 newLetter();
-showImages();
+
 
 
 function newLetter() {
@@ -129,6 +125,9 @@ function newLetter() {
 
             if (victory === teamNameAssignment.length) {
 
+                jQuery("#try").removeClass("nfl");
+                jQuery("#try").css(
+                    "background-image", "url('./images/" + teamNameAssignment + ".png') !important");
 
                 alert(
                     "Congratulations, You Won! Click the button below to play again."
@@ -147,11 +146,9 @@ function newLetter() {
                 document.getElementById("button").innerHTML =
                     "Click Here To Play Again";
 
-                jQuery("#try").removeClass("nfl");
-                jQuery("#try").css(
-                    "background-image", "url('./images/" + teamNameAssignment + ".png')",
 
-                );
+
+
 
             }
 
