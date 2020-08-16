@@ -293,6 +293,9 @@ ImagesOfTeams();
 
 function newLetter() {
     document.onkeyup = function(event) {
+
+        document.getElementById('try').className += 'nfl';
+
         if (event.keyCode >= 65 && event.keyCode <= 90) {
             userGuess = event.key.toLowerCase();
 
