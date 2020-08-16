@@ -84,10 +84,11 @@ function format() {
 
     document.getElementById("myAudio").pause();
 
+
+
 };
 
 newLetter();
-format();
 
 
 function addNFL() {
