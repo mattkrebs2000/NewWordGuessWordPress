@@ -92,7 +92,7 @@ newLetter();
 
 
 function addNFL() {
-    jQuery("#try").removeClass();
+
     if (!victory === teamNameAssignment.length) {
         jQuery("#try").addClass("nfl");
     }
