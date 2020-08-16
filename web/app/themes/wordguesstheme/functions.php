@@ -95,12 +95,29 @@ function addNFL() {
     jQuery("#try").addClass("nfl");
 }
 
-function addTeam() {
-    jQuery("#try").removeClass("nfl");
-    jQuery("#try").css(
-        "background-image",
-        "url('./images/" + teamNameAssignment + ".png !important')"
-    );
+function ImagesOfTeams() {
+
+    jQuery("#try").removeClass();
+
+    if (teamNameAssignment == "bears") {
+        jQuery("#try").addClass("bears")
+    };
+
+    if (teamNameAssignment == "browns") {
+        jQuery("#try").addClass("browns")
+    };
+
+    if (teamNameAssignment == "bengals") {
+        jQuery("#try").addClass("bengals")
+    };
+
+    if (teamNameAssignment == "bills") {
+        jQuery("#try").addClass("bills")
+    };
+
+    if (teamNameAssignment == "broncos") {
+        jQuery("#try").addClass("broncos")
+    };
 }
 
 
@@ -139,7 +156,7 @@ function newLetter() {
 
             if (victory === teamNameAssignment.length) {
 
-                addTeam();
+                ImagesOfTeams();
 
                 alert(
                     "Congratulations, You Won! Click the button below to play again."
