@@ -102,6 +102,7 @@ function addNFL() {
 function ImagesOfTeams() {
 
     jQuery("#try").removeClass();
+    jQuery("body").removeClass();
 
     console.log("teamname " +
         teamNameAssignment + victory + teamNameAssignment.length);
