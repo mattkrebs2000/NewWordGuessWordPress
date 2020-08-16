@@ -21,7 +21,10 @@ let eleme;
 let wg;
 
 
+
 function format() {
+
+
 
 
     victory = 0;
@@ -74,7 +77,7 @@ function format() {
     el.innerHTML = blankSpaces.join(" ");
 
 
-    addNFL();
+
     listOfGuesses = [];
     listOfWrongGuesses = [];
     wrongGuesses = 5;
@@ -87,13 +90,14 @@ function format() {
 
 
 };
-
+addNFL();
 newLetter();
 
 
 function addNFL() {
 
-    if (!victory === teamNameAssignment.length) {
+    if (!victory === (teamNameAssignment.length - 1)) {
+        jQuery("#try").removeClass();
         jQuery("#try").addClass("nfl");
     }
 }
@@ -102,7 +106,7 @@ function addNFL() {
 function ImagesOfTeams() {
 
     jQuery("#try").removeClass();
-    jQuery("body").removeClass();
+
 
     console.log("teamname " +
         teamNameAssignment + victory + teamNameAssignment.length);
@@ -250,6 +254,7 @@ function newLetter() {
             userGuess = event.key.toLowerCase();
 
             ImagesOfTeams()
+            addNFL()
 
             let doubles = listOfGuesses.includes(userGuess);
 
