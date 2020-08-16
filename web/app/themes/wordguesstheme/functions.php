@@ -8,7 +8,7 @@ let losses = [];
 let percentage = [0];
 let roundedPercentage;
 let victory;
-let teamNameAssignment;
+let teamNameAssignment = "";
 let blankSpaces;
 let el;
 let listOfGuesses;
