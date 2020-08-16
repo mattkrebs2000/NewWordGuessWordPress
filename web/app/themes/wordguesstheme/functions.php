@@ -259,8 +259,11 @@ function newLetter() {
         if (event.keyCode >= 65 && event.keyCode <= 90) {
             userGuess = event.key.toLowerCase();
 
+            document.getElementById('try').className += 'nfl';
+
             ImagesOfTeams()
             addNFL()
+
 
             let doubles = listOfGuesses.includes(userGuess);
 
