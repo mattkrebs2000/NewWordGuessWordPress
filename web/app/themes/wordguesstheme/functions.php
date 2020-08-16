@@ -123,7 +123,7 @@ function newLetter() {
 
 
             if (victory === teamNameAssignment.length) {
-                victorysong();
+
 
                 alert(
                     "Congratulations, You Won! Click the button below to play again."
