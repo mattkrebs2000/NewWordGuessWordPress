@@ -100,7 +100,7 @@
 			if ( to.toLowerCase() === api( 'background_color' ).get().toLowerCase() ) {
 				$( 'body' ).addClass( 'reduced-spacing' );
 			} else {
-				$( 'body' ).removeClass( 'reduced-spacing' );
+				$( 'body' ).( 'reduced-spacing' );
 			}
 		} );
 	} );
