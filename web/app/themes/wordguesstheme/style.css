@@ -411,6 +411,7 @@ h3 {
   font-family: "Times New Roman", Times, serif;
   background-position-y: top;
   padding: 20px;
+ 
 }
 
 .bears {
@@ -422,6 +423,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 
 .bengals {
@@ -433,6 +436,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 
 .bills {
@@ -444,6 +449,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .broncos {
   background-image: url("./images/broncos.png") !important;
@@ -454,6 +461,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .browns {
   background-image: url("./images/browns.png") !important;
@@ -464,6 +473,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .buccaneers {
   background-image: url("./images/buccaneers.png") !important;
@@ -474,6 +485,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .cardinals {
   background-image: url("./images/cardinals.png") !important;
@@ -484,6 +497,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .chargers {
   background-image: url("./images/chargers.png") !important;
@@ -494,6 +509,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .chiefs {
   background-image: url("./images/chiefs.png") !important;
@@ -504,6 +521,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .colts {
   background-image: url("./images/colts.png") !important;
@@ -514,6 +533,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .cowboys {
   background-image: url("./images/cowboys.png") !important;
@@ -524,6 +545,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .dolphins {
   background-image: url("./images/dolphins.png") !important;
@@ -534,6 +557,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .eagles {
   background-image: url("./images/eagles.png") !important;
@@ -544,6 +569,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .falcons {
   background-image: url("./images/falcons.png") !important;
@@ -554,6 +581,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .fortyniners {
   background-image: url("./images/fortyniners.png") !important;
@@ -564,6 +593,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .giants {
   background-image: url("./images/giants.png") !important;
@@ -574,6 +605,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .jaguars {
   background-image: url("./images/jaguars.png") !important;
@@ -584,6 +617,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .jets {
   background-image: url("./images/jets.png") !important;
@@ -594,6 +629,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .lions {
   background-image: url("./images/lions.png") !important;
@@ -604,6 +641,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .packers {
   background-image: url("./images/packers.png") !important;
@@ -614,6 +653,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .panthers {
   background-image: url("./images/panthers.png") !important;
@@ -624,6 +665,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .patriots {
   background-image: url("./images/patriots.png") !important;
@@ -634,6 +677,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .raiders {
   background-image: url("./images/raiders.png") !important;
@@ -644,6 +689,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .rams {
   background-image: url("./images/rams.png") !important;
@@ -654,6 +701,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .ravens {
   background-image: url("./images/ravens.png") !important;
@@ -664,6 +713,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .redskins {
   background-image: url("./images/redskins.png") !important;
@@ -674,6 +725,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .saints {
   background-image: url("./images/saints.png") !important;
@@ -684,6 +737,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .seahawks {
   background-image: url("./images/seahawks.png") !important;
@@ -694,6 +749,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .steelers {
   background-image: url("./images/steelers.png") !important;
@@ -704,6 +761,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .texans {
   background-image: url("./images/texans.png") !important;
@@ -714,6 +773,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .titans {
   background-image: url("./images/titans.png") !important;
@@ -724,6 +785,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 .vikings {
   background-image: url("./images/vikings.png") !important;
@@ -734,6 +797,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 
 
