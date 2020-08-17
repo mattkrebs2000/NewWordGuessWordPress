@@ -18,7 +18,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  margin-top: -200px;
+ 
 }
 
 #missedAttemtsLeft {
@@ -409,6 +409,8 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
+  background-position-y: top;
+  padding: 20px;
 }
 
 .bears {
