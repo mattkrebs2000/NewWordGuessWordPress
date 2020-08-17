@@ -358,38 +358,35 @@ function newLetter() {
             }
 
             if (wrongGuesses === 0) {
-                alert("You lost, click the button below to try again!");
-                games++;
-                losses++;
-                elem = document.getElementById("lossTotal");
-                elem.innerHTML = " " + losses;
+                alert("You lost, the team was " + teamNameAssignment + " click the button below to
+                    try again!");
+                    games++; losses++; elem = document.getElementById("lossTotal"); elem.innerHTML = " " +
+                    losses;
 
-                percentage = (wins / games) * 100;
-                roundedPercentage = Math.round(10 * percentage) / 10;
+                    percentage = (wins / games) * 100; roundedPercentage = Math.round(10 * percentage) / 10;
 
-                eleme = document.getElementById("winningPercentage");
-                eleme.innerHTML = roundedPercentage;
+                    eleme = document.getElementById("winningPercentage"); eleme.innerHTML = roundedPercentage;
 
-                document.getElementById("try").style.backgroundImage =
+                    document.getElementById("try").style.backgroundImage =
                     "url('./images/" + teamNameAssignment + ".png')";
 
-                document.getElementById("button").innerHTML =
+                    document.getElementById("button").innerHTML =
                     "Click Here To Play Again";
+                }
+
+                el = document.getElementById("teamContainer");
+                el.innerHTML = blankSpaces.join(" ");
+
+                ele = document.getElementById("missedAttemtsLeft");
+                ele.innerHTML = " " + wrongGuesses;
+
+                return true;
+            } else {
+                alert("Please input alphabet characters only");
+                return false;
             }
-
-            el = document.getElementById("teamContainer");
-            el.innerHTML = blankSpaces.join(" ");
-
-            ele = document.getElementById("missedAttemtsLeft");
-            ele.innerHTML = " " + wrongGuesses;
-
-            return true;
-        } else {
-            alert("Please input alphabet characters only");
-            return false;
-        }
+        };
     };
-};
 </script>
 <?php
 }
