@@ -9,7 +9,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: wordguesstheme
 */
 
-body {
+/* body {
   background-color: #ffffff;
 
   background-repeat: no-repeat;
@@ -19,7 +19,7 @@ body {
   background-position: center;
   font-family: "Times New Roman", Times, serif;
  
-}
+} */
 
 #missedAttemtsLeft {
   font-size: 20px;
@@ -409,7 +409,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
  
 }
@@ -423,7 +423,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 
@@ -436,7 +436,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 
@@ -449,7 +449,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .broncos {
@@ -461,7 +461,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .browns {
@@ -473,7 +473,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .buccaneers {
@@ -485,7 +485,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .cardinals {
@@ -497,7 +497,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .chargers {
@@ -509,7 +509,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .chiefs {
@@ -521,7 +521,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .colts {
@@ -533,7 +533,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .cowboys {
@@ -545,7 +545,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .dolphins {
@@ -557,7 +557,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .eagles {
@@ -569,7 +569,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .falcons {
@@ -581,7 +581,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .fortyniners {
@@ -593,7 +593,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .giants {
@@ -605,7 +605,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .jaguars {
@@ -617,7 +617,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .jets {
@@ -629,7 +629,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .lions {
@@ -641,7 +641,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .packers {
@@ -653,7 +653,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .panthers {
@@ -665,7 +665,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .patriots {
@@ -677,7 +677,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .raiders {
@@ -689,7 +689,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .rams {
@@ -701,7 +701,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .ravens {
@@ -713,7 +713,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .redskins {
@@ -725,7 +725,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .saints {
@@ -737,7 +737,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .seahawks {
@@ -749,7 +749,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .steelers {
@@ -761,7 +761,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .texans {
@@ -773,7 +773,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .titans {
@@ -785,7 +785,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 .vikings {
@@ -797,7 +797,7 @@ h3 {
   background-attachment: fixed;
   background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-position-y: top;
+  
   padding: 20px; max-height: 800px;
 }
 
@@ -806,7 +806,6 @@ h3 {
   min-height: 800px;
   height: inherit;
   top: -100px;
-
 
 }
 
