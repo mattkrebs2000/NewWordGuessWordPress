@@ -21,17 +21,6 @@ Text Domain: wordguesstheme
  
 } */
 
-html{
-  height: 100%;
-}
-body {
-  min-height: 100%;
-}
-
-#missedAttemtsLeft {
-  font-size: 20px;
-  color: black;
-}
 
 #title {
   text-shadow: 2px 2px 4px #000000;
@@ -885,4 +874,15 @@ background-position-y:top; margin-top: -30px;
 }
 
 
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+#missedAttemtsLeft {
+  font-size: 20px;
+  color: black;
+}
 
