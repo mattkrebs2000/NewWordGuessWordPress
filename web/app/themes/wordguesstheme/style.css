@@ -803,8 +803,9 @@ h3 {
 
 #try {
 
+  min-height: 800px;
   height: inherit;
-  
+
 
 }
 
