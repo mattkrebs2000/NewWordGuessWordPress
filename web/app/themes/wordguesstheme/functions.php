@@ -22,7 +22,7 @@ let wg;
 
 document.getElementById('try').className += 'nfl';
 
-function format() {
+const format = () => {
 
     jQuery("#try").removeClass();
 
@@ -98,7 +98,7 @@ addNFL();
 newLetter();
 
 
-function addNFL() {
+const addNFL = () => {
 
     if (!victory === (teamNameAssignment.length - 1)) {
         jQuery("#try").removeClass();
@@ -107,7 +107,7 @@ function addNFL() {
 }
 
 
-function ImagesOfTeams() {
+const ImagesOfTeams = () => {
 
 
 
@@ -291,7 +291,7 @@ function ImagesOfTeams() {
 
 ImagesOfTeams();
 
-function newLetter() {
+const newLetter = () => {
     document.onkeyup = function(event) {
 
 
@@ -357,7 +357,8 @@ function newLetter() {
             }
 
             if (wrongGuesses === 0) {
-                alert("You lost. The team was " + teamNameAssignment + ". Click the button below to try again!");
+                alert("You lost. The team was " + teamNameAssignment +
+                ". Click the button below to try again!");
                 games++;
                 losses++;
                 elem = document.getElementById("lossTotal");
