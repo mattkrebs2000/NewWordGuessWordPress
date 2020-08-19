@@ -22,6 +22,14 @@ let wg;
 
 document.getElementById('try').className += 'nfl';
 
+const addNFL = () => {
+
+    if (!victory === (teamNameAssignment.length - 1)) {
+        jQuery("#try").removeClass();
+        jQuery("#try").addClass("nfl");
+    }
+}
+
 const format = () => {
 
     jQuery("#try").removeClass();
@@ -67,13 +75,7 @@ const format = () => {
         "vikings",
     ];
 
-    const addNFL = () => {
 
-        if (!victory === (teamNameAssignment.length - 1)) {
-            jQuery("#try").removeClass();
-            jQuery("#try").addClass("nfl");
-        }
-    }
 
 
     teamNameAssignment = teamNames[Math.floor(Math.random() * teamNames
