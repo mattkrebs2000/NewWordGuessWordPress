@@ -22,6 +22,98 @@ let wg;
 
 document.getElementById('try').className += 'nfl';
 
+
+const newLetter = () => {
+    document.onkeyup = function(event) {
+
+        if (event.keyCode >= 65 && event.keyCode <= 90) {
+            userGuess = event.key.toLowerCase();
+
+            ImagesOfTeams()
+            addNFL()
+
+            let doubles = listOfGuesses.includes(userGuess);
+
+            if (doubles === true) {
+                alert("That letter has already been guessed. TRY AGAIN");
+                return false;
+            }
+
+            for (var i = 0; i < teamNameAssignment.length; i++) {
+                if (teamNameAssignment[i] === userGuess && doubles === false) {
+                    blankSpaces[i] = userGuess;
+                    victory++;
+                    listOfGuesses.push(userGuess);
+
+                }
+            }
+            if (teamNameAssignment.indexOf(userGuess) == -1 && !listOfWrongGuesses.includes(" " + userGuess)) {
+                listOfWrongGuesses.push(" " + userGuess);
+                wrongGuesses--;
+                wg = document.getElementById("firstGuess");
+                wg.innerHTML = listOfWrongGuesses;
+
+                ("wrong guesses", listOfWrongGuesses);
+            }
+
+
+            if (victory === teamNameAssignment.length) {
+
+                alert(
+                    "Congratulations, You Won! Click the button below to play again."
+                );
+
+                games++;
+                wins++;
+                elem = document.getElementById("winTotal");
+                elem.innerHTML = wins;
+
+                percentage = (wins / games) * 100;
+                roundedPercentage = Math.round(10 * percentage) / 10;
+
+                eleme = document.getElementById("winningPercentage");
+                eleme.innerHTML = roundedPercentage;
+
+                document.getElementById("button").innerHTML =
+                    "Click Here To Play Again";
+
+            }
+
+            if (wrongGuesses === 0) {
+                alert("You lost. The team was " + teamNameAssignment +
+                    ". Click the button below to try again!");
+                games++;
+                losses++;
+                elem = document.getElementById("lossTotal");
+                elem.innerHTML = " " + losses;
+
+                percentage = (wins / games) * 100;
+                roundedPercentage = Math.round(10 * percentage) / 10;
+
+                eleme = document.getElementById("winningPercentage");
+                eleme.innerHTML = roundedPercentage;
+
+                document.getElementById("try").style.backgroundImage =
+                    "url('./images/" + teamNameAssignment + ".png')";
+
+                document.getElementById("button").innerHTML =
+                    "Click Here To Play Again";
+            }
+
+            el = document.getElementById("teamContainer");
+            el.innerHTML = blankSpaces.join(" ");
+
+            ele = document.getElementById("missedAttemtsLeft");
+            ele.innerHTML = " " + wrongGuesses;
+
+            return true;
+        } else {
+            alert("Please input alphabet characters only");
+            return false;
+        }
+    };
+};
+
 const addNFL = () => {
 
     if (!victory === (teamNameAssignment.length - 1)) {
@@ -282,97 +374,6 @@ const ImagesOfTeams = () => {
 }
 
 ImagesOfTeams();
-
-const newLetter = () => {
-    document.onkeyup = function(event) {
-
-        if (event.keyCode >= 65 && event.keyCode <= 90) {
-            userGuess = event.key.toLowerCase();
-
-            ImagesOfTeams()
-            addNFL()
-
-            let doubles = listOfGuesses.includes(userGuess);
-
-            if (doubles === true) {
-                alert("That letter has already been guessed. TRY AGAIN");
-                return false;
-            }
-
-            for (var i = 0; i < teamNameAssignment.length; i++) {
-                if (teamNameAssignment[i] === userGuess && doubles === false) {
-                    blankSpaces[i] = userGuess;
-                    victory++;
-                    listOfGuesses.push(userGuess);
-
-                }
-            }
-            if (teamNameAssignment.indexOf(userGuess) == -1 && !listOfWrongGuesses.includes(" " + userGuess)) {
-                listOfWrongGuesses.push(" " + userGuess);
-                wrongGuesses--;
-                wg = document.getElementById("firstGuess");
-                wg.innerHTML = listOfWrongGuesses;
-
-                ("wrong guesses", listOfWrongGuesses);
-            }
-
-
-            if (victory === teamNameAssignment.length) {
-
-                alert(
-                    "Congratulations, You Won! Click the button below to play again."
-                );
-
-                games++;
-                wins++;
-                elem = document.getElementById("winTotal");
-                elem.innerHTML = wins;
-
-                percentage = (wins / games) * 100;
-                roundedPercentage = Math.round(10 * percentage) / 10;
-
-                eleme = document.getElementById("winningPercentage");
-                eleme.innerHTML = roundedPercentage;
-
-                document.getElementById("button").innerHTML =
-                    "Click Here To Play Again";
-
-            }
-
-            if (wrongGuesses === 0) {
-                alert("You lost. The team was " + teamNameAssignment +
-                    ". Click the button below to try again!");
-                games++;
-                losses++;
-                elem = document.getElementById("lossTotal");
-                elem.innerHTML = " " + losses;
-
-                percentage = (wins / games) * 100;
-                roundedPercentage = Math.round(10 * percentage) / 10;
-
-                eleme = document.getElementById("winningPercentage");
-                eleme.innerHTML = roundedPercentage;
-
-                document.getElementById("try").style.backgroundImage =
-                    "url('./images/" + teamNameAssignment + ".png')";
-
-                document.getElementById("button").innerHTML =
-                    "Click Here To Play Again";
-            }
-
-            el = document.getElementById("teamContainer");
-            el.innerHTML = blankSpaces.join(" ");
-
-            ele = document.getElementById("missedAttemtsLeft");
-            ele.innerHTML = " " + wrongGuesses;
-
-            return true;
-        } else {
-            alert("Please input alphabet characters only");
-            return false;
-        }
-    };
-};
 </script>
 <?php
 }
