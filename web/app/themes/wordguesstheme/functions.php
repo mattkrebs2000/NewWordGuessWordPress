@@ -66,6 +66,16 @@ const format = () => {
         "titans",
         "vikings",
     ];
+
+    const addNFL = () => {
+
+        if (!victory === (teamNameAssignment.length - 1)) {
+            jQuery("#try").removeClass();
+            jQuery("#try").addClass("nfl");
+        }
+    }
+
+
     teamNameAssignment = teamNames[Math.floor(Math.random() * teamNames
         .length)];
     blankSpaces = [];
@@ -358,7 +368,7 @@ const newLetter = () => {
 
             if (wrongGuesses === 0) {
                 alert("You lost. The team was " + teamNameAssignment +
-                ". Click the button below to try again!");
+                    ". Click the button below to try again!");
                 games++;
                 losses++;
                 elem = document.getElementById("lossTotal");
