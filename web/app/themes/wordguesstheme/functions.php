@@ -36,8 +36,6 @@ const format = () => {
 
     document.getElementById('try').className += 'nfl';
 
-
-
     victory = 0;
 
     const teamNames = [
@@ -75,9 +73,6 @@ const format = () => {
         "vikings",
     ];
 
-
-
-
     teamNameAssignment = teamNames[Math.floor(Math.random() * teamNames
         .length)];
     blankSpaces = [];
@@ -103,26 +98,11 @@ const format = () => {
 
     document.getElementById("myAudio").pause();
 
-
-
 };
 addNFL();
 newLetter();
 
-
-const addNFL = () => {
-
-    if (!victory === (teamNameAssignment.length - 1)) {
-        jQuery("#try").removeClass();
-        jQuery("#try").addClass("nfl");
-    }
-}
-
-
 const ImagesOfTeams = () => {
-
-
-
 
     console.log("teamname " +
         teamNameAssignment + victory + teamNameAssignment.length);
@@ -306,20 +286,13 @@ ImagesOfTeams();
 const newLetter = () => {
     document.onkeyup = function(event) {
 
-
-
         if (event.keyCode >= 65 && event.keyCode <= 90) {
             userGuess = event.key.toLowerCase();
-
-
 
             ImagesOfTeams()
             addNFL()
 
-
             let doubles = listOfGuesses.includes(userGuess);
-
-
 
             if (doubles === true) {
                 alert("That letter has already been guessed. TRY AGAIN");
@@ -345,8 +318,6 @@ const newLetter = () => {
 
 
             if (victory === teamNameAssignment.length) {
-
-
 
                 alert(
                     "Congratulations, You Won! Click the button below to play again."
